@@ -589,7 +589,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   radius: 0.0127
-  targetTransform: {fileID: 84858031392010015}
+  targetTransform: {fileID: 2973274382490715965}
   handPose: {fileID: 11400000, guid: ee57bb5442fbbcb743d606980970cc7c, type: 2}
   gripOptions: 8
   priority: 1

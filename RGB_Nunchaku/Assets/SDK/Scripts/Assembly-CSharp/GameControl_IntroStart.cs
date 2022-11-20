@@ -1,0 +1,56 @@
+using TMPro;
+using StressLevelZero.VRMK;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
+using UnityEngine;
+
+public class GameControl_IntroStart : GameControl
+{
+	public string GameVersion;
+	public TextMeshProUGUI txt_GameVersion;
+	public TextMeshPro txt_BiosText;
+	public string string_Bios;
+	public BodyVitals ctrl_bodyVitals;
+	public PlayableDirector director;
+	public TimelineAsset introA;
+	public TimelineAsset introB;
+	public TimelineAsset introC;
+	public GameObject playerPreferences;
+	public GameObject uiCanvasObject;
+	public GameObject uiCanvasObject_Height;
+	public GameObject confirmObject;
+	public GameObject brettOrthoObject;
+	public GameObject but_saveconfirm;
+	public GameObject panel_QuickHeight;
+	public GameObject panel_Seated;
+	public GameObject panel_help;
+	public GameObject panel_helpPopup;
+	public MeshRenderer floor_grass;
+	public Material floor_concrete;
+	public SwitchFog fog;
+	public AudioClip brettCommandOverrideClip;
+	public AudioClip brettConfirm;
+	public AudioClip brettOkay;
+	public AudioClip boneworksMusic;
+	public AudioClip valleyAmbience;
+	public AudioClip mythosOperatorAttentionClip;
+	public AudioClip mythosWelcomeClip;
+	public AudioClip mythosAdminClip;
+	public AudioClip mythosMeasureClip;
+	public AudioClip mythosDiagRequiredClip;
+	public AudioClip alertClip;
+	public AudioClip confirmClip;
+	public AudioClip explosionClip;
+	public AudioClip clip_InfoClick;
+	public Color SkyState1;
+	public Color EquatorState1;
+	public Color GroundState1;
+	public Color SkyState2;
+	public Color EquatorState2;
+	public Color GroundState2;
+	public Color SkyState3;
+	public Color EquatorState3;
+	public Color GroundState3;
+	public AudioSource src_AmbientBoneworks;
+	public AudioSource src_AmbientValley;
+}

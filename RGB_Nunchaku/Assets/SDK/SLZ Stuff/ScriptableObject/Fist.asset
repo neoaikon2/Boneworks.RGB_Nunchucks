@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2358985ab79b99049983dd879c505e9, type: 3}
+  m_Name: Fist
+  m_EditorClassIdentifier:
+  hand2: {x: 0.0004373413, y: 0.0006671178, z: 0.003323562, w: 0.9999942}
+  handleInHandPos: {x: 0, y: 0, z: 0}
+  handleInHandRot: {x: 0, y: 0, z: 0, w: 1}
+  thumb1: {x: 0.4739603, y: 0.4251474, z: 0.1166538, w: 0.7622357}
+  thumb23: {x: 57.07778, y: 86.36258, z: 1}
+  index1: {x: 0.1155328, y: 0.1438122, z: 0.6398488, w: 0.7460321}
+  index23: {x: 107.5398, y: 86.91465, z: 1}
+  middle1: {x: -0.01493891, y: 0.03056844, z: 0.6695047, w: 0.7420282}
+  middle23: {x: 106.0154, y: 84.50946, z: 1}
+  ring1: {x: -0.1384427, y: -0.02879533, z: 0.6971692, w: 0.7028225}
+  ring23: {x: 111.9838, y: 111.9838, z: 1}
+  pinky1: {x: -0.2027134, y: -0.06296972, z: 0.7480771, w: 0.628747}
+  pinky23: {x: 91.08534, y: 106.6654, z: 1}

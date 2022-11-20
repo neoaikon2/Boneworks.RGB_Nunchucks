@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2358985ab79b99049983dd879c505e9, type: 3}
+  m_Name: PistolOffhand
+  m_EditorClassIdentifier:
+  hand2: {x: -0.08906995, y: -0.1076795, z: -0.05173161, w: 0.9888355}
+  handleInHandPos: {x: -0.01975542, y: -0.04650989, z: 0.03881843}
+  handleInHandRot: {x: -0.009928738, y: 0.142022, z: -0.6596243, w: 0.7379885}
+  thumb1: {x: 0.5099702, y: 0.3095101, z: -0.1012415, w: 0.7961683}
+  thumb23: {x: 33.76596, y: 351.1595, z: 1}
+  index1: {x: -0.003800866, y: 0.03846366, z: 0.4301041, w: 0.9019515}
+  index23: {x: 48.06288, y: 27.9492, z: 1}
+  middle1: {x: -0.05666807, y: 0.06301863, z: 0.5381941, w: 0.8385491}
+  middle23: {x: 59.64557, y: 20.61789, z: 1}
+  ring1: {x: -0.1136362, y: 0.09127548, z: 0.5343212, w: 0.8326202}
+  ring23: {x: 26.30747, y: 26.30747, z: 1}
+  pinky1: {x: -0.2140961, y: 0.08707608, z: 0.5191767, w: 0.8228221}
+  pinky23: {x: 54.14439, y: 27.265, z: 1}

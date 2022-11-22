@@ -1,0 +1,94 @@
+ManifestFileVersion: 0
+CRC: 399954783
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2d6ad8214437485d721947c0f1fc4cb4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: de8a669e15fea7f4b75140b713a71f63
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c80feb8091ab42ad4074e3890e509a72, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ff29efa27d54a1a9492ed18700488b65, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 869055c297d272ad4bf38cad0d78b0d4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0431efd3ca092f349b2d315b0e70bf46, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c89f3e3250284bd40064d9be45752ce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ebd630053c107ea1468c3e70b1067366, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fd0ce3079cdb6a646a75f65cec8e8714, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ad2469196d9a6e894869f8c6a8af7b61, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cd6d2d4976ddf1b147d01a3681a67e5f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b581b479ce62caae47dd1bcd0622baab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fd76bfb961ab38a349b7ad20c8d43256, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d6e9705a6bfb24043ac853b95eac22b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5452309ab5f08c834846f417f2177039, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9678667d20a9e4824974a847a1c2b408, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3dcbd67dc68e0bb24511c7b002e9db3c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e0be58e1d0c25b64b098844f333a302, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3cc09f8ee84f1ca14c04b0ec10771778, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d4213e8fc8611fbc4a86f0056cbd9ad6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 120
+  Script: {instanceID: 0}
+- Class: 145
+  Script: {instanceID: 0}
+Assets:
+- Assets/RGB Nunchaku Assets/Materials/tang_mat.mat
+- Assets/RGB Nunchaku Assets/Audio/Zoup.wav
+- Assets/RGB Nunchaku Assets/Materials/chaku.mat
+- Assets/RGB Nunchaku Assets/Audio/chuckhit4.wav
+- Assets/RGB Nunchaku Assets/Audio/chuck3.wav
+- Assets/RGB Nunchaku Assets/chaku_tang.obj
+- Assets/RGB Nunchaku Assets/Audio/chuckhit3.wav
+- Assets/RGB Nunchaku Assets/Audio/chuck4.wav
+- Assets/RGB Nunchaku Assets/CustomItems.prefab
+- Assets/RGB Nunchaku Assets/Audio/chuck2.wav
+- Assets/RGB Nunchaku Assets/Audio/chuck1.wav
+- Assets/RGB Nunchaku Assets/chaku_hilt.obj
+- Assets/RGB Nunchaku Assets/Audio/chuckwhoosh.wav
+- Assets/RGB Nunchaku Assets/Audio/chuckhit1.wav
+- Assets/RGB Nunchaku Assets/Audio/chuckhit2.wav
+Dependencies: []

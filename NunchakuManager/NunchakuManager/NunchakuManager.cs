@@ -70,7 +70,7 @@ namespace NunchakuMod
             chakuJoint.tolerance = .025f;
             chakuJoint.breakForce = float.PositiveInfinity;
             chakuJoint.breakTorque = float.PositiveInfinity;
-            chakuJoint.massScale = 10;
+            chakuJoint.massScale = 1;
             chakuJoint.connectedMassScale = 1;
             chakuJoint.enablePreprocessing = true;
 

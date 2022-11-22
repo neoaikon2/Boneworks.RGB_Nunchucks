@@ -363,9 +363,9 @@ GameObject:
   - component: {fileID: 7663956653541906999}
   - component: {fileID: 1473912514565500785}
   - component: {fileID: 2360591690851583758}
+  - component: {fileID: 2213526082516240856}
   - component: {fileID: 4071295026238103506}
   - component: {fileID: 8200140111163051780}
-  - component: {fileID: 27778791316712920}
   m_Layer: 0
   m_Name: Chaku Primary
   m_TagString: Untagged
@@ -495,7 +495,7 @@ MonoBehaviour:
   altImpact: []
   pitchMod: 1
   bluntAttack: 1
-  bluntDamageMult: 0.6
+  bluntDamageMult: 0.8
   minVelocity: 0.5
   velocityClipSplit: 8
   jointBreakVolume: 1
@@ -560,6 +560,29 @@ MonoBehaviour:
   poolee: {fileID: 0}
   saveType: 1
   sourceUUID: 
+--- !u!145 &2213526082516240856
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742821935947331228}
+  m_ConnectedBody: {fileID: 423133289261972026}
+  m_Anchor: {x: 0, y: 0, z: -0.156}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: -0.1560001}
+  serializedVersion: 2
+  m_Spring: 800
+  m_Damper: 5
+  m_MinDistance: 0
+  m_MaxDistance: 0.006
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!120 &4071295026238103506
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -680,101 +703,6 @@ MonoBehaviour:
   - {fileID: 1471421518346727757}
   - {fileID: 4150005507130761333}
   despawnAudioClip: {fileID: 8300000, guid: 40321eb0e67b2b9479872fc7014731ce, type: 3}
---- !u!153 &27778791316712920
-ConfigurableJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742821935947331228}
-  m_ConnectedBody: {fileID: 423133289261972026}
-  m_Anchor: {x: 0, y: 0, z: -0.15600005}
-  m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: -0.15600005}
-  serializedVersion: 2
-  m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 1
-  m_YMotion: 1
-  m_ZMotion: 1
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
-  m_LinearLimitSpring:
-    spring: 800
-    damper: 5
-  m_LinearLimit:
-    limit: 0.006
-    bounciness: 0
-    contactDistance: 0
-  m_AngularXLimitSpring:
-    spring: 0
-    damper: 0
-  m_LowAngularXLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_HighAngularXLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
-  m_AngularYLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_AngularZLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_TargetPosition: {x: 0, y: 0, z: 0}
-  m_TargetVelocity: {x: 0, y: 0, z: 0}
-  m_XDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_YDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_ZDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
-  m_AngularXDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_AngularYZDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_SlerpDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_ProjectionMode: 0
-  m_ProjectionDistance: 0.1
-  m_ProjectionAngle: 180
-  m_ConfiguredInWorldSpace: 0
-  m_SwapBodies: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!1 &2888792433863313681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1261,7 @@ MonoBehaviour:
   altImpact: []
   pitchMod: 1
   bluntAttack: 1
-  bluntDamageMult: 0.6
+  bluntDamageMult: 0.8
   minVelocity: 0.5
   velocityClipSplit: 8
   jointBreakVolume: 1

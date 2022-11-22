@@ -19,7 +19,7 @@ namespace NunchakuMod
         public GameObject chakuPrimary = null;
         public LineRenderer lineRenderer = null;
         public GameObject chakuSecondary = null;
-        public SpringJoint chakuJoint = null;
+        public ConfigurableJoint chakuJoint = null;
 
         private Color rgbCycle = Color.red;
                 
@@ -29,7 +29,7 @@ namespace NunchakuMod
             chakuPrimary = transform.Find("Chaku Primary").gameObject;
             lineRenderer = chakuPrimary.GetComponent<LineRenderer>();
             chakuSecondary = transform.Find("Chaku Secondary").gameObject;
-            chakuJoint = chakuPrimary.GetComponent<SpringJoint>();            
+            chakuJoint = chakuPrimary.GetComponent<ConfigurableJoint>();            
         }
 
         void Awake()
@@ -55,24 +55,37 @@ namespace NunchakuMod
                 return;
 
             // Create the spring joint
-            chakuJoint = chakuPrimary.AddComponent<SpringJoint>();
+            chakuJoint = chakuPrimary.AddComponent<ConfigurableJoint>();
 
             // Attach it to the secondary chacku
             chakuJoint.connectedBody = chakuSecondary.GetComponent<Rigidbody>();
             chakuJoint.autoConfigureConnectedAnchor = false;
             chakuJoint.anchor = new Vector3(0, 0, -.156f);
             chakuJoint.connectedAnchor = new Vector3(0, 0, -.156f);
-
-            // Setup the joint
-            chakuJoint.spring = 800;
-            chakuJoint.damper = 5;
-            chakuJoint.maxDistance = .006f;
-            chakuJoint.tolerance = .025f;
             chakuJoint.breakForce = float.PositiveInfinity;
             chakuJoint.breakTorque = float.PositiveInfinity;
             chakuJoint.massScale = 1;
             chakuJoint.connectedMassScale = 1;
             chakuJoint.enablePreprocessing = true;
+
+            // Configurable Joint only
+            chakuJoint.xMotion = ConfigurableJointMotion.Limited;
+            chakuJoint.yMotion = ConfigurableJointMotion.Limited;
+            chakuJoint.zMotion = ConfigurableJointMotion.Limited;
+            SoftJointLimitSpring limitSpring = new SoftJointLimitSpring();
+            limitSpring.spring = 800;
+            limitSpring.damper = 5;
+            SoftJointLimit linearLimit = new SoftJointLimit();
+            linearLimit.limit = .006f;
+            chakuJoint.linearLimitSpring = limitSpring;
+            chakuJoint.linearLimit = linearLimit;
+
+            // Spring joint only
+            //chakuJoint.spring = 800;
+            //chakuJoint.damper = 5;
+            //chakuJoint.maxDistance = .006f;
+            //chakuJoint.tolerance = .025f;
+            
 
 #if DEBUG
             MelonLogger.Msg("Relinking...");

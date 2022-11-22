@@ -29,7 +29,7 @@ namespace NunchakuMod
             chakuPrimary = transform.Find("Chaku Primary").gameObject;
             lineRenderer = chakuPrimary.GetComponent<LineRenderer>();
             chakuSecondary = transform.Find("Chaku Secondary").gameObject;
-            chakuJoint = chakuPrimary.GetComponent<SpringJoint>();
+            chakuJoint = chakuPrimary.GetComponent<SpringJoint>();            
         }
 
         void Awake()
@@ -64,12 +64,15 @@ namespace NunchakuMod
             chakuJoint.connectedAnchor = new Vector3(0, 0, -.156f);
 
             // Setup the joint
-            chakuJoint.spring = 100;
-            chakuJoint.damper = 2;
-            chakuJoint.maxDistance = .015f;
+            chakuJoint.spring = 800;
+            chakuJoint.damper = 5;
+            chakuJoint.maxDistance = .006f;
+            chakuJoint.tolerance = .025f;
+            chakuJoint.breakForce = float.PositiveInfinity;
+            chakuJoint.breakTorque = float.PositiveInfinity;
             chakuJoint.massScale = 10;
-            chakuJoint.connectedMassScale = 10;
-            chakuJoint.enablePreprocessing = false;
+            chakuJoint.connectedMassScale = 1;
+            chakuJoint.enablePreprocessing = true;
 
 #if DEBUG
             MelonLogger.Msg("Relinking...");
